@@ -251,6 +251,7 @@ extern "C" {
 //<<_opts.c>>
 //<<_threadpool.c>>
 //<<_math.c>>
+//<<_graph.c>>
 //<<_platform.c>>
 
 #endif // ZPL_INCLUDE_ZPL_H

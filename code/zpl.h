@@ -3244,6 +3244,20 @@ ZPL_DEF int zpl_rect2_intersection_result(zpl_rect2 a, zpl_rect2 b, zpl_rect2 *i
 #define ZPL_MURMUR64_DEFAULT_SEED 0x9747b28c
 #endif
 
+//
+// Scene Graph
+//
+
+typedef struct 
+{
+    int a;
+} zpl_node;
+
+typedef struct
+{
+    int a;
+} zpl_scene;
+
 ////////////////////////////////////////////////////////////////
 //
 // Platform Stuff
@@ -11840,6 +11854,8 @@ int zpl_rect2_intersection_result(zpl_rect2 a, zpl_rect2 b, zpl_rect2 *intersect
     }
 }
 
+
+
 ////////////////////////////////////////////////////////////////
 //
 // Platform
@@ -13660,6 +13676,7 @@ ZPL_COMPARE_PROC(zpl_video_mode_dsc_cmp) { return zpl_video_mode_cmp(b, a); }
 //<<_opts.c>>
 //<<_threadpool.c>>
 //<<_math.c>>
+//<<_graph.c>>
 //<<_platform.c>>
 
 #endif // ZPL_INCLUDE_ZPL_H
